@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="surveyassets/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">SURVEY FORM</h1>
+        <p id="description">This survey form will be used to capture the data of participant</p>
+            <form id="survey-form " action="#" method="POST">
+
+                <div class="form-control" id="user-name">
+                    <label for ="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="enter your name" required/>
+                </div>
+
+                <div class="form-control" id="user-email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required/>
+                </div>
+
+                <div class="form-control" id="user-age">
+                     <label for="number">Age:</label>
+                    <input type="number" id="number" name="number" placeholder="enter your age" min="18" max="90" required/>
+                </div>
+
+              
+                <div class="form-control" id="radio">
+                    <legend> Gender</legend>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender"/>Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender"/>Female
+                    </label>
+                </div>
+    
+                <div class="form-control" id="checkbox">
+                    <legend>Profession</legend>
+                    <label for="accountant">
+                        <input type="checkbox" id="accountant" name="profession"/>Accountant
+                    </label>
+                    <label for="lawyer">
+                        <input type="checkbox" id="lawyer" name="profession"/>Lawyer
+                    </label>
+                    <label for="accountant">
+                        <input type="checkbox" id="doctor" name="profession"/>Doctor
+                    </label>
+                </div>
+
+                <div class="form-control" id="dropdown">
+                    <label for="dropdown">State </label>
+                    <select name="state" id="choose">
+                        <option value="abuja">Abuja</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="kano">Kano</option>
+                        <option value="rivers">Rivers</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <textarea placeholder="write an essay not more than 300 words about yourself" cols="25" rows="5"></textarea>
+                </div> 
+    
+                <input type="submit" id="submit" value="Submit"/>
+        
+            </form>
+     </div>
+        
+    
+</body>
+</html>
